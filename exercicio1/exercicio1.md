@@ -15,7 +15,7 @@ O typescript é uma lib que deve ser instalada nas dependências de desenvolvime
     - não se preocupe, os códigos estão salvos na branch de ontem (node-package-json) e podem ser referenciados se necessário
  
 ## Crie o index.ts
-- lembre-se de criá-lo dentra de uma pasta chamada src
+- lembre-se de criá-lo dentro de uma pasta chamada src
 - coloque um console.log só para verificar se tudo funcionou
 - edite o script de start para executar a transpilação e rodar o javascript da pasta build (que é criada na transpilação)
     - lembre-se de referenciar o material assíncrono para saber como configurar o script de start para o typescript
