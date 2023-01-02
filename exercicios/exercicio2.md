@@ -26,7 +26,9 @@ No projeto Labecommerce temos 3 entidades:
 
 exemplo:
 ```
-export type TVideoYoutube = {
+// estamos dentro do arquivo src/types.ts tipando um vídeo do youtube
+
+export type TVideo = {
   id: string,
   channelId: string,
   title: string,
