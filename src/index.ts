@@ -1,3 +1,6 @@
-import { users, products, purchase } from "./database";
-
-console.log(users,products, purchase)
+import { getAllUsers, getAllProducts, getProductsById, queryProductsByName, getAllPurchasesFromUserId, purchase} from "./database";
+getAllUsers()
+getAllProducts()
+getProductsById('1')
+queryProductsByName('Casaco')
+getAllPurchasesFromUserId('1')
