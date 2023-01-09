@@ -1,4 +1,4 @@
-export type DPeople = {
+export type DUser = {
     id: string,
     email: string,
     password: string
