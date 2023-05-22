@@ -1,23 +1,22 @@
 # Exercício 2
 Agora que temos uma aplicação typescript configurada, podemos criar tipagens para nossos dados.<br>
-No projeto Labecommerce temos 3 entidades:
-## user
+No projeto Labecommerce temos 2 entidades básicas (as outras tabelas são de relação, que veremos nas aulas de banco de dados):
+
+## users
 É a pessoa cliente cadastrada.
   - id (string)
+  - name (string)
   - email (string)
   - password (string)
-## product
+  - createdAt (string no formato ano-mês-dia T hora:minuto:segundo:milésimo-de-segundos Z)
+
+## products
 É o produto cadastrado.
   - id (string)
   - name (string)
   - price (number)
-  - category (string)
-## purchase
-É a compra realizada por cliente.
-  - userId (string)
-  - productId (string)
-  - quantity (number)
-  - totalPrice (number)
+  - description (string)
+  - imageUrl (string)
 
 ## Crie tipagens para cada uma das entidades acima
 - lembre-se de referenciar o material assíncrono
