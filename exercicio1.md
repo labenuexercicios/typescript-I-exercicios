@@ -10,13 +10,15 @@ O typescript é uma lib que deve ser instalada nas dependências de desenvolvime
 ## Refatore o package.json
 - remova a linha "type": "module", pois o typescript já utiliza módulos automaticamente e repeti-la aqui dá problemas de execução
 
-## Limpe a pasta
-- delete os arquivos feitos ontem (index.js, par-ou-impar.js e pedra-papel-tesoura.js)
+## Delete a pasta exercicios/
+- delete a pasta ```exercicios/``` com os arquivos feitos ontem (process-argv.js, par-ou-impar.js e pedra-papel-tesoura.js)
     - não se preocupe, os códigos estão salvos na branch de ontem (node-package-json) e podem ser referenciados se necessário
- 
-## Crie o index.ts
-- lembre-se de criá-lo dentro de uma pasta chamada src
-- coloque um console.log só para verificar se tudo funcionou
+
+## Crie a pasta src/
+Na raiz do projeto, crie a pasta ```src/```.
+
+## Altere o index.js para index.ts e mova-o para a src/
+Coloque um console.log no ```src/index.ts``` só para verificar se tudo funcionou.
 - edite o script de start para executar a transpilação e rodar o javascript da pasta build (que é criada na transpilação)
     - lembre-se de referenciar o material assíncrono para saber como configurar o script de start para o typescript
-- rode o script de start e veja se seu console.log apareceu
+- rode o script de start e confirme que se seu console.log apareceu
