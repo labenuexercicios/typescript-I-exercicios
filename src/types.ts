@@ -1,13 +1,13 @@
-export type TUsers = {
-    id: string,
+export type TUser = {
+    id: string | number,
     name:string,
     email: string,
-    password: string,
+    password: string | number,
     createdAt: string //no formato ano-mês-dia T hora:minuto:segundo:milésimo-de-segundos Z
 }
 
 export type TProducts = {
-    id: string,
+    id: string | number,
     name:string,
     price: number,
     description: string,

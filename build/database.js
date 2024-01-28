@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.products = exports.users = void 0;
+exports.searchProductsByName = exports.getAllProducts = exports.createProduct = exports.getAllUsers = exports.createUser = exports.products = exports.users = void 0;
 exports.users = [
     {
         id: "u001",
@@ -33,3 +33,43 @@ exports.products = [
         imageUrl: "https://picsum.photos/seed/Monitor/400"
     }
 ];
+const createUser = (id, nome, email, password) => {
+    const newUser = {
+        id: id,
+        name: nome,
+        email: email,
+        password: password,
+        createdAt: new Date().toISOString(),
+    };
+    exports.users.push(newUser);
+    return "Cadastro realizado com sucesso";
+};
+exports.createUser = createUser;
+const getAllUsers = () => {
+    return exports.users;
+};
+exports.getAllUsers = getAllUsers;
+(0, exports.getAllUsers)();
+const createProduct = (id, nome, price, description, imageUrl) => {
+    const newProduct = {
+        id: id,
+        name: nome,
+        price: price,
+        description: description,
+        imageUrl: imageUrl
+    };
+    exports.products.push(newProduct);
+    return "Cadastro realizado com sucesso";
+};
+exports.createProduct = createProduct;
+const getAllProducts = () => {
+    return exports.products;
+};
+exports.getAllProducts = getAllProducts;
+(0, exports.getAllUsers)();
+const searchProductsByName = (name) => {
+    return exports.products.filter((product) => {
+        return product.name.toLowerCase().includes(name.toLowerCase());
+    });
+};
+exports.searchProductsByName = searchProductsByName;
