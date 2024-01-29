@@ -22,7 +22,7 @@ Com as tipagens desenvolvidas, agora podemos criar alguns dados mock (mock = de 
 
 ## product
 - no database.ts, crie e exporte a constante products e tipe-a como um array do type respectivo criado no exercício 2
-    - lembre-se de referenciar o material assíncrono
+- lembre-se de referenciar o material assíncrono
 - crie pelo menos 2 objetos nesse array:
     - o mouse gamer:
         - id é ```"prod001"```
